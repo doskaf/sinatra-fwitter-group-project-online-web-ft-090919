@@ -1,0 +1,7 @@
+<h1>Welcome, <%= Helpers.current_user(session).username %>
+<h3>Recent Tweets: </h3>
+
+<% @tweets.each do |tweet| %>
+    <%= tweet.content %><br>
+    <br>
+<% end %>
